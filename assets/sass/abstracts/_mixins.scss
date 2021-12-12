@@ -6,3 +6,70 @@
         font-display: swap;
     }
 }
+
+@mixin d-flex($a-items: center, $j-content: null, $f-direction: null) {
+    display: flex;
+    align-items: $a-items;
+    @if $j-content != null {
+        justify-content: $j-content;
+    }
+    @if $f-direction != null {
+        flex-direction: $f-direction;
+    }
+}
+
+@mixin pseudo-before($content, $width: null, $height: null, $bg-color: null, $top: null, $left: null, $right: null, $bottom: null) {
+    &::before {
+        content: $content;
+        @if $width != null {
+            width: $width;
+        }
+        @if $height != null {
+            height: $height;
+        }
+        @if $bg-color != null {
+            background-color: $bg-color;
+        }
+        position: absolute;
+        @if $top != null {
+            top: $top;
+        }
+        @if $left != null {
+            left: $left;
+        }
+        @if $right != null {
+            right: $right;
+        }
+        @if $bottom != null {
+            bottom: $bottom;
+        }
+    }
+}
+
+@mixin pseudo-after($content, $width: null, $height: null, $bg-color: null, $top: null, $left: null, $right: null, $bottom: null) {
+    &::after {
+        content: $content;
+        @if $width != null {
+            width: $width;
+        }
+        @if $height != null {
+            height: $height;
+        }
+        @if $bg-color != null {
+            background-color: $bg-color;
+        }
+        position: absolute;
+        @if $top != null {
+            top: $top;
+        }
+        @if $left != null {
+            left: $left;
+        }
+        @if $right != null {
+            right: $right;
+        }
+        @if $bottom != null {
+            bottom: $bottom;
+        }
+    }
+}

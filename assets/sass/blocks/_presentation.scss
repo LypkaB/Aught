@@ -1,0 +1,126 @@
+.presentation {
+    position: relative;
+
+    &__wrap {
+        background: url('../images/presentation__bg.jpg') no-repeat center / cover;
+        color: white;
+        padding-bottom: 32px;
+    }
+
+    &__logo {
+        text-align: center;
+        margin-bottom: 86px;
+    }
+
+    &__title {
+        font-family: 'KudryashevHeadline-Regular', sans-serif;
+        font-size: 80px;
+        font-weight: normal;
+        text-align: right;
+        margin-bottom: 90px;
+
+        > span {
+            display: block;
+
+            &:first-child {
+                transform: translateX(-24%);
+            }
+        }
+    }
+
+    &__numbers {
+        font-size: 14px;
+        text-align: right;
+
+        > span {
+            position: relative;
+            @include pseudo-after('.', $right: -5px);
+
+            & + span {
+                margin-right: 16px;
+            }
+
+            &:first-child {
+                margin-right: 68px;
+                @include pseudo-before('', 19px, 1px, white, $right: -27px, $bottom: 2px);
+                @include pseudo-after('', 47px, 1px, rgba(255, 255, 255, 0.5), $right: -55px, $bottom: 2px);
+            }
+        }
+    }
+
+    &__descr {
+        width: 216px;
+        margin-top: -147px;
+        padding-right: 8px;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        margin-left: 17%;
+        margin-bottom: 18.5%;
+
+        > p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-style: italic;
+
+            &:first-child {
+                text-indent: 26px;
+            }
+        }
+
+        &-date {
+            display: inline-block;
+            margin-top: 50px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__author-info {
+        text-transform: uppercase;
+        margin-left: 17%;
+
+        > span {
+            display: block;
+
+            &:nth-child(2) {
+                margin-bottom: 45px;
+            }
+        }
+    }
+
+    &__social {
+        @include d-flex($f-direction: column);
+        row-gap: 72px;
+        position: absolute;
+        top: 27%;
+
+        a {
+            color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+
+    &__offer-news {
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin-top: -64px;
+        background-color: white;
+        border-radius: 50%;
+        font-size: 11px;
+        color: #0f0d0d;
+        letter-spacing: 1px;
+        white-space: nowrap;
+        text-decoration: none;
+        text-transform: uppercase;
+        position: relative;
+
+        > span {
+            position: absolute;
+            top: 50%;
+            left: -3px;
+            transform: translateY(-50%);
+        }
+    }
+}

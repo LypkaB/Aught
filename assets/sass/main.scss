@@ -1,2 +1,30 @@
 @import 'abstracts/mixins';
 @import 'base/font';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'GramatikaDemo-Regular', sans-serif;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 31px;
+    padding-right: 31px;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+@import 'blocks/blocks';
+@import 'media/media';
