@@ -364,6 +364,121 @@ img {
   border-bottom-right-radius: 12px;
 }
 
+.come-as {
+  padding-bottom: 125px;
+}
+
+.come-as__title {
+  display: block;
+  font-size: 14px;
+  color: #0f0d0d;
+  letter-spacing: 115.8px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 125px;
+}
+
+.come-as__photos-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 122px;
+}
+
+.come-as__photos-top > .photos-item:first-child {
+  width: 541px;
+  height: initial;
+}
+
+.come-as__photos-top > .photos-item:first-child .photos-item__descr-text {
+  width: 400px;
+}
+
+.come-as__photos-top > .photos-item:first-child .photos-item__descr-tags {
+  position: relative;
+}
+
+.come-as__photos-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.come-as__photos-bottom .photos-item__wrap {
+  -ms-flex-preferred-size: 60.7%;
+  flex-basis: 60.7%;
+}
+
+.come-as .photos-item {
+  width: 263px;
+  height: 487.5px;
+  position: relative;
+}
+
+.come-as .photos-item__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 16px;
+  -moz-column-gap: 16px;
+  column-gap: 16px;
+}
+
+.come-as .photos-item__img {
+  margin-bottom: 5px;
+}
+
+.come-as .photos-item__descr {
+  font-size: 14px;
+}
+
+.come-as .photos-item__descr > span {
+  display: block;
+}
+
+.come-as .photos-item__descr-date {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+
+.come-as .photos-item__descr-name {
+  font-family: 'KudryashevHeadline-Regular', sans-serif;
+  font-size: 24px;
+  margin-bottom: 11px;
+}
+
+.come-as .photos-item__descr-text {
+  font-style: italic;
+  letter-spacing: 0.8px;
+  margin-bottom: 20px;
+}
+
+.come-as .photos-item__descr-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 0;
+}
+
+.come-as .photos-item__descr-tags li {
+  padding: 3px 8px;
+  border: 1px solid #0f0d0d;
+  border-radius: 28px;
+}
+
 @media (min-width: 1024px) {
   .header__panel-lines,
   .header__panel-language-btn,

@@ -1,0 +1,99 @@
+.come-as {
+    padding-bottom: 125px;
+
+    &__title {
+        display: block;
+        font-size: 14px;
+        color: $main-dark;
+        letter-spacing: 115.8px;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 125px;
+    }
+
+    &__photos {
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 122px;
+
+            > .photos-item:first-child {
+                width: 541px;
+                height: initial;
+
+                .photos-item__descr {
+                    &-text {
+                        width: 400px;
+                    }
+
+                    &-tags {
+                        position: relative;
+                    }
+                }
+            }
+        }
+
+        &-bottom {
+            display: flex;
+            flex-direction: row-reverse;
+
+            .photos-item__wrap {
+                flex-basis: 60.7%;
+            }
+        }
+    }
+
+    .photos-item {
+        width: 263px;
+        height: 487.5px;
+        position: relative;
+
+        &__wrap {
+            display: flex;
+            column-gap: 16px;
+        }
+
+        &__img {
+            margin-bottom: 5px;
+        }
+
+        &__descr {
+            font-size: 14px;
+
+            > span {
+                display: block;
+            }
+
+            &-date {
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                margin-bottom: 23px;
+            }
+
+            &-name {
+                font-family: 'KudryashevHeadline-Regular', sans-serif;
+                font-size: 24px;
+                margin-bottom: 11px;
+            }
+
+            &-text {
+                font-style: italic;
+                letter-spacing: 0.8px;
+                margin-bottom: 20px;
+            }
+
+            &-tags {
+                @include d-flex();
+                text-transform: uppercase;
+                position: absolute;
+                bottom: 0;
+
+                li {
+                    padding: 3px 8px;
+                    border: 1px solid $main-dark;
+                    border-radius: 28px;
+                }
+            }
+        }
+    }
+}
