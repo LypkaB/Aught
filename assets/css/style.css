@@ -497,16 +497,13 @@ img {
   text-transform: uppercase;
 }
 
-.come-as .photos-item__tags li {
-  padding: 1px 8px;
-  border: 1px solid #0f0d0d;
-  border-radius: 28px;
-}
-
 .come-as .photos-item__tags li a {
   font-size: 14px;
   color: #0f0d0d;
   text-decoration: none;
+  padding: 3px 8px;
+  border: 1px solid #0f0d0d;
+  border-radius: 28px;
 }
 
 .come-as .photos-row_reverse {

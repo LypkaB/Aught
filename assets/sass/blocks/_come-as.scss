@@ -90,16 +90,13 @@
                 @include d-flex();
                 text-transform: uppercase;
 
-                li {
-                    padding: 1px 8px;
+                li a {
+                    font-size: 14px;
+                    color: $main-dark;
+                    text-decoration: none;
+                    padding: 3px 8px;
                     border: 1px solid $main-dark;
                     border-radius: 28px;
-
-                    a {
-                        font-size: 14px;
-                        color: $main-dark;
-                        text-decoration: none;
-                    }
                 }
             }
         }
