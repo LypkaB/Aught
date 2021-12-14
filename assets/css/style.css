@@ -384,6 +384,10 @@ img {
   margin-top: 125px;
 }
 
+.come-as-second {
+  padding-top: 124px;
+}
+
 .come-as__title {
   display: block;
   font-size: 14px;
@@ -503,6 +507,19 @@ img {
   font-size: 14px;
   color: #0f0d0d;
   text-decoration: none;
+}
+
+.come-as .photos-row_reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+.come-as .photos-row_reverse .photos-item__wrap {
+  -webkit-box-pack: initial;
+  -ms-flex-pack: initial;
+  justify-content: initial;
 }
 
 .interview {
