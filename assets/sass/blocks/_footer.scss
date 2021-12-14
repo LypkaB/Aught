@@ -1,0 +1,182 @@
+.footer {
+    padding: 32px 32px 52px;
+    background-color: black;
+    color: $main-dark;
+    position: relative;
+
+    .container {
+        display: flex;
+        padding: 24px;
+        background-color: white;
+
+        > div {
+            flex-basis: 50%;
+        }
+    }
+
+    a {
+        color: $main-dark;
+        text-decoration: none;
+    }
+
+    &__left-col {
+        display: flex;
+        flex-direction: column;
+        padding-right: 54px;
+    }
+
+    &__logo {
+        margin-bottom: 64px;
+    }
+
+    &__mail {
+        &-input {
+            margin-bottom: 125px;
+
+            form {
+                position: relative;
+                margin-bottom: 23px;
+            }
+
+            #footerMail {
+                width: 100%;
+                padding-top: 11px;
+                padding-bottom: 11px;
+                border-width: 0 0 1px;
+                border-color: black;
+                font-family: 'KudryashevHeadline-Regular', sans-serif;
+                outline: none;
+            }
+
+            span {
+                font-size: 14px;
+                font-style: italic;
+                letter-spacing: 0.8px;
+            }
+        }
+
+        &-label {
+            width: 100%;
+            height: 100%;
+            font-family: 'KudryashevHeadline-Regular', sans-serif;
+            font-size: 24px;
+            position: absolute;
+            top: 70%;
+            left: 0;
+            transform: translateY(-50%);
+            transition: all 0.3s linear 0s;
+
+            &.label_up {
+                color: blue;
+                top: -20px;
+                left: -15%;
+                transform: scale(0.7);
+                transition: all 0.3s linear 0s;
+            }
+        }
+
+        &-btn {
+            width: 24px;
+            height: 100%;
+            border: none;
+            background-color: transparent;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            transform: translateY(-50%);
+
+            span {
+                display: block;
+                width: 21px;
+                height: 2px;
+                background-color: black;
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translateY(-50%);
+
+                &::before,
+                &::after {
+                    content: '';
+                    display: block;
+                    width: 13px;
+                    height: 2px;
+                    background-color: black;
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                }
+
+                &::before {
+                    transform: translateY(-50%) rotate(35deg);
+                    transform-origin: right bottom;
+                }
+
+                &::after {
+                    transform: translateY(-50%) rotate(-35deg);
+                    transform-origin: right top;
+                }
+            }
+        }
+    }
+
+    &__socials {
+        &-mail {
+            font-family: 'KudryashevHeadline-Regular', sans-serif;
+            font-size: 24px;
+        }
+
+        &-links {
+            display: flex;
+            margin-top: 21px;
+
+            li + li {
+                margin-left: 24px;
+            }
+
+            a {
+                font-size: 14px;
+                letter-spacing: 0.8px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    &__right-col {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 147px;
+        padding-right: 18px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+
+        li + li {
+            margin-top: 22px;
+        }
+
+        a {
+            font-size: 14px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+    }
+
+    &__credentials {
+        @include d-flex($j-content: space-between);
+
+        a {
+            text-transform: uppercase;
+        }
+    }
+
+    .section-come-as {
+        color: white;
+        margin-bottom: 0;
+        position: relative;
+        bottom: -44px;
+    }
+}

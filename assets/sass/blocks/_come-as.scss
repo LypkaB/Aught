@@ -1,22 +1,12 @@
 .come-as {
-    padding-bottom: 127px;
+    padding-bottom: 128px;
 
     .container .come-as__photos-row + .come-as__photos-row {
-        margin-top: 125px;
+        margin-top: 128px;
     }
 
     &-second {
         padding-top: 124px;
-    }
-
-    &__title {
-        display: block;
-        font-size: 14px;
-        color: $main-dark;
-        letter-spacing: 115.8px;
-        text-transform: uppercase;
-        margin-top: 10px;
-        margin-bottom: 125px;
     }
 
     &__photos-row {

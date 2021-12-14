@@ -37,4 +37,15 @@
             display: block;
         }
     }
+
+    &-come-as {
+        display: block;
+        font-size: 14px;
+        color: $main-dark;
+        letter-spacing: 115.8px;
+        text-transform: uppercase;
+        overflow-x: hidden;
+        margin-top: 10px;
+        margin-bottom: 125px;
+    }
 }
