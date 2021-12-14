@@ -1,0 +1,40 @@
+.section {
+    &-title {
+        font-family: 'KudryashevHeadline-Regular', sans-serif;
+        font-size: 80px;
+        font-weight: normal;
+        text-align: right;
+
+        > span {
+            display: block;
+        }
+    }
+
+    &-descr {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+
+        > p {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-style: italic;
+
+            &:first-child {
+                text-indent: 23px;
+            }
+        }
+
+        &-date {
+            text-transform: uppercase;
+        }
+    }
+
+    &-author-info {
+        text-transform: uppercase;
+
+        > span {
+            display: block;
+        }
+    }
+}
