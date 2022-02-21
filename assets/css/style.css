@@ -255,6 +255,7 @@ img {
   -webkit-column-gap: 32px;
   -moz-column-gap: 32px;
   column-gap: 32px;
+  position: relative;
 }
 
 .header__panel-lines {
@@ -289,33 +290,23 @@ img {
   padding-bottom: 20px;
 }
 
-.header__panel-lines:hover .header__panel-links,
-.header__panel-padding:hover .header__panel-links {
-  display: block;
-}
-
-.header__panel-links {
-  display: none;
+.header__panel ul {
   padding: 10px;
-  position: absolute;
-  top: 20px;
-  left: 0;
   background-color: black;
   border: 0.5px solid white;
   border-radius: 3px;
-  cursor: initial;
   z-index: 9;
 }
 
-.header__panel-links li {
+.header__panel ul li {
   position: relative;
 }
 
-.header__panel-links li + li {
+.header__panel ul li + li {
   margin-top: 10px;
 }
 
-.header__panel-links li::after {
+.header__panel ul li::after {
   content: '';
   width: 100%;
   height: 1px;
@@ -325,8 +316,16 @@ img {
   bottom: -6px;
 }
 
-.header__panel-links li:last-child::after {
+.header__panel ul li:last-child::after {
   content: none;
+}
+
+.header__panel-links {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  cursor: initial;
 }
 
 .header__panel-links a {
@@ -344,10 +343,31 @@ img {
   margin-right: 10px;
 }
 
-.header__panel-language-btn {
-  background: none;
-  border: none;
-  color: white;
+.header__panel-language-menu {
+  position: relative;
+  cursor: pointer;
+}
+
+.header__panel-language-menu .header__panel-padding {
+  padding-bottom: 0;
+  position: absolute;
+  top: 15px;
+  right: 0;
+}
+
+.header__panel-language-list {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 5px;
+}
+
+.header__panel-language-list li {
+  cursor: pointer;
+}
+
+.header__panel-language-list li:hover {
+  color: darkgrey;
 }
 
 .header__panel-chevron::before {
@@ -364,6 +384,12 @@ img {
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
   transform: rotate(135deg);
+}
+
+.header__panel-lines:hover ul,
+.header__panel-padding:hover ul,
+.header__panel-language-menu:hover ul {
+  display: block;
 }
 
 .header__menu {
