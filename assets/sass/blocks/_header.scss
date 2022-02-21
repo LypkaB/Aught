@@ -135,6 +135,10 @@
             color: white;
             text-transform: uppercase;
             text-decoration: none;
+
+            &:hover {
+                color: darkgrey;
+            }
         }
     }
 

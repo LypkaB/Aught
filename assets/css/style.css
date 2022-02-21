@@ -202,6 +202,10 @@ img {
   text-decoration: none;
 }
 
+.presentation__social a:hover {
+  color: darkgrey;
+}
+
 .presentation__offer-news {
   display: block;
   width: 64px;
@@ -408,6 +412,10 @@ img {
   color: white;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.header__menu-item a:hover {
+  color: darkgrey;
 }
 
 .header__search {
