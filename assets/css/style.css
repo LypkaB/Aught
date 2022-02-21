@@ -283,6 +283,63 @@ img {
   bottom: 0;
 }
 
+.header__panel-padding {
+  width: 100%;
+  height: 10px;
+  padding-bottom: 20px;
+}
+
+.header__panel-lines:hover .header__panel-links,
+.header__panel-padding:hover .header__panel-links {
+  display: block;
+}
+
+.header__panel-links {
+  display: none;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background-color: black;
+  border: 0.5px solid white;
+  border-radius: 3px;
+  cursor: initial;
+  z-index: 9;
+}
+
+.header__panel-links li {
+  position: relative;
+}
+
+.header__panel-links li + li {
+  margin-top: 10px;
+}
+
+.header__panel-links li::after {
+  content: '';
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.6);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+}
+
+.header__panel-links li:last-child::after {
+  content: none;
+}
+
+.header__panel-links a {
+  display: block;
+  font-size: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.header__panel-links a:hover {
+  color: darkgrey;
+}
+
 .header__panel-language {
   margin-right: 10px;
 }
