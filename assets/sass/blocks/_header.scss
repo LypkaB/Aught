@@ -35,10 +35,7 @@
 
             li {
                 position: relative;
-
-                & + li {
-                    margin-top: 10px;
-                }
+                margin-bottom: 10px;
 
                 &::after {
                     content: '';
@@ -50,8 +47,12 @@
                     bottom: -6px;
                 }
 
-                &:last-child::after {
-                    content: none;
+                &:last-child {
+                    margin-bottom: 0;
+
+                    &::after {
+                        content: none;
+                    }
                 }
             }
         }
@@ -72,6 +73,10 @@
                 &:hover {
                     color: darkgrey;
                 }
+            }
+
+            .links-adaptive {
+                display: none;
             }
         }
 
