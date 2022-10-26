@@ -39,12 +39,10 @@
     }
 
     &-come-as {
-        display: block;
+        display: flex;
+        justify-content: space-between;
         font-size: 14px;
         color: $main-dark;
-        letter-spacing: 115.8px;
-        text-transform: uppercase;
-        overflow-x: hidden;
         margin-top: 10px;
         margin-bottom: 125px;
     }
