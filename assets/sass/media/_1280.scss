@@ -1,5 +1,32 @@
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
     .header__menu {
         column-gap: 25px;
+    }
+
+    .section-come-as {
+        margin-bottom: 30px;
+    }
+
+    .come-as {
+        padding-bottom: 50px;
+
+        .container .come-as__photos-row + .come-as__photos-row {
+            margin-top: 50px;
+        }
+        .photos-item {
+            &_large {
+                flex-basis: 263px;
+
+                .photos-item {
+                    &__img,
+                    &__text {
+                        width: 263px;
+                    }
+                }
+            }
+            &_empty {
+                display: none;
+            }
+        }
     }
 }
