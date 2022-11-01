@@ -99,4 +99,28 @@
             }
         }
     }
+
+    .interview {
+        &__title {
+            flex-direction: column;
+            justify-content: center;
+
+            > span {
+                font-size: 60px;
+
+                &:nth-child(2) {
+                    width: initial;
+                }
+            }
+        }
+
+        .section-title {
+            text-align: center;
+        }
+
+        &__descr {
+            width: initial;
+            text-align: center;
+        }
+    }
 }

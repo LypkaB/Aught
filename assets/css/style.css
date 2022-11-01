@@ -1054,6 +1054,33 @@ img {
     -ms-flex-pack: center;
     justify-content: center;
   }
+
+  .interview__title {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
+  .interview__title > span {
+    font-size: 60px;
+  }
+
+  .interview__title > span:nth-child(2) {
+    width: initial;
+  }
+
+  .interview .section-title {
+    text-align: center;
+  }
+
+  .interview__descr {
+    width: initial;
+    text-align: center;
+  }
 }
 
 @media (max-width: 575px) {
