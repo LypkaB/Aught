@@ -123,4 +123,22 @@
             text-align: center;
         }
     }
+
+    .come-as.come-as-second {
+        padding-top: 20px;
+
+        .photos {
+            &-row_reverse {
+                flex-direction: column;
+            }
+            &-item {
+                margin-top: 30px;
+
+                &__wrap {
+                    margin-top: 0;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
 }
